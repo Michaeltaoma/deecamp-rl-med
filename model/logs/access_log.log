@@ -1,0 +1,2 @@
+2021-08-03 19:30:32,192 - /127.0.0.1:63028 "PUT /predictions/morphine HTTP/1.1" 200 37
+2021-08-03 19:30:53,199 - /127.0.0.1:63064 "PUT /predictions/morphine HTTP/1.1" 200 4

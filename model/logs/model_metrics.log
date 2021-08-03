@@ -1,0 +1,2 @@
+2021-08-03 19:30:32,190 - PredictionTime.Milliseconds:26.54|#ModelName:morphine,Level:Model|#hostname:Michaels-MacBook-Pro.local,requestID:d8b87fe4-1dcc-48c0-a51e-be269daf6644,timestamp:1627990232
+2021-08-03 19:30:53,199 - PredictionTime.Milliseconds:2.28|#ModelName:morphine,Level:Model|#hostname:Michaels-MacBook-Pro.local,requestID:5e7bc67a-b430-4f9f-8a76-5ba26ed35e9f,timestamp:1627990253
