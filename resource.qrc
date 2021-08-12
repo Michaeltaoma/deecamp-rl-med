@@ -1,0 +1,139 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../../SPoro/SporoMarker/src/icon/arrow-down.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/arrow-left.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/arrow-right.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/arrow-up.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/block.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/camera.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/circle-help.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/circle-info.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/circle-left.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/circle-no.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/circle-right.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/circle-yes.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/clear.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/click.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/close.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/copy.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/cross.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/curve.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/database.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/download.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/edit.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/eraser.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/expend.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/file.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/folder.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/fullscreen-quit.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/fullscreen-show.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/go-down.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/go-left.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/go-right.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/go-up.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/home.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/image-blue.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/image-gray.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/image-green.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/image-red.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/image.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/item.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/label-with-info.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/label.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/layers.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/list.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/marker.ico</file>
+        <file>../../SPoro/SporoMarker/src/icon/marker.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/marker.rc</file>
+        <file>../../SPoro/SporoMarker/src/icon/move.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/open-new.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/open.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/paste.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/plot.pptx</file>
+        <file>../../SPoro/SporoMarker/src/icon/plus.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/point.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/poly.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/print.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/qt.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/quit.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/rect.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/redo.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/reduce.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/resource.qrc</file>
+        <file>../../SPoro/SporoMarker/src/icon/return.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/right.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/save.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/search.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/set.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/sidebar-left.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/sidebar-right.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/table.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/tool.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/toolbar.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/trush.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/undo.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/visible-no.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/visible-yes.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/welcome.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/zoom-default.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/zoom-height.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/zoom-larger.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/zoom-smaller.png</file>
+        <file>../../SPoro/SporoMarker/src/icon/zoom-width.png</file>
+        <file>../image/doc.jpg</file>
+        <file>../image/ct.jpg</file>
+        <file>../image/ct2.jpg</file>
+        <file>../image/rl.jpg</file>
+        <file>../image/medicalreport.jpg</file>
+        <file>../image/R-C.jpg</file>
+        <file>../image/ct3.jpg</file>
+        <file>../image/mdr.jpg</file>
+        <file>../image/navigation/example/vertical/navigation/elements/vertical/sheets/Name.png</file>
+        <file>../image/navigation/example/vertical/navigation/elements/vertical/line items/default/inactive.png</file>
+        <file>../image/navigation/example/vertical/navigation/elements/vertical/line items/default/inactive-1.png</file>
+        <file>../image/navigation/example/vertical/navigation/elements/vertical/line items/default/inactive-2.png</file>
+        <file>../image/navigation/example/vertical/navigation/elements/vertical/line items/default/selected.png</file>
+        <file>../image/navigation/example/vertical/navigation/elements/vertical/line items/default/icon/action/assignment.png</file>
+        <file>../image/navigation/example/vertical/navigation/elements/vertical/line items/default/icon/action/assignment-1.png</file>
+        <file>../image/navigation/example/vertical/navigation/elements/vertical/line items/default/icon/action/dashboard.png</file>
+        <file>../image/navigation/example/vertical/navigation/elements/vertical/line items/default/icon/action/dashboard-1.png</file>
+        <file>../image/navigation/example/vertical/navigation/elements/vertical/line items/default/icon/social/Vector.png</file>
+        <file>../image/search.png</file>
+        <file>../image/settings.png</file>
+        <file>../image/Frame 77.png</file>
+        <file>../image/avatar + title.png</file>
+        <file>../image/Frame 78.png</file>
+        <file>../image/Frame 79.png</file>
+        <file>../image/boxing.png</file>
+        <file>../image/draugdose.png</file>
+        <file>../image/heart.png</file>
+        <file>../image/indexpain.png</file>
+        <file>../image/painindex.png</file>
+        <file>../image/ratecoor.png</file>
+        <file>../image/Respiration rate.png</file>
+        <file>../image/downarrow.png</file>
+        <file>../image/04.png</file>
+        <file>../image/Logo Dashboard.png</file>
+        <file>../image/F.png</file>
+        <file>../image/M.png</file>
+        <file>../image/list.png</file>
+        <file>../image/listper.png</file>
+        <file>../image/list2.png</file>
+        <file>../image/geoger.png</file>
+        <file>../image/more_vert.png</file>
+        <file>../image/man1.png</file>
+        <file>../image/man2.png</file>
+        <file>../image/woman1.png</file>
+        <file>../image/woman2.png</file>
+        <file>../image/women04.png</file>
+        <file>../image/nodata.png</file>
+        <file>../image/lineback.png</file>
+        <file>../image/hover.png</file>
+        <file>../image/hover2.png</file>
+        <file>../image/ratecoor_gaitubao_260x86.png</file>
+        <file>../image/ratecoor_gaitubao_378x125.png</file>
+        <file>../image/boxing_gaitubao_264x150.png</file>
+        <file>../image/ratecoor_gaitubao_109x36.png</file>
+        <file>icon.ico</file>
+    </qresource>
+</RCC>
