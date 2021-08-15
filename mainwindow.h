@@ -14,6 +14,7 @@
 #include <fcntl.h>
 #include <curl/curl.h>
 #include <stdio.h>
+#include <QMenu>
 #include <QTextCodec>
 
 
@@ -41,12 +42,19 @@ private slots:
 
     void on_next_clicked();
 
+    void on_FindingsText_customContextMenuRequested(const QPoint &pos);
+
+    void when_word_selected();
 
 private:
     dashborad* mparent;
     Ui::MainWindow *ui;
     CURL *curl;
     QString sendfilename;
+    QMenu* menu;
+    QStringList word_list;
+
+
 };
 
 size_t write_data(void *buffer,size_t size,size_t nmemb,void *userp);

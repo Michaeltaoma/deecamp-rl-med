@@ -19,13 +19,20 @@ size_t write_data(void *buffer,size_t size,size_t nmemb,void *userp)
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
+    , ui(new Ui::MainWindow), menu(new QMenu(this))
 {
     ui->setupUi(this);
     ui->ImageViwer->setScaledContents(true);
     ui->ImpressionText->setPlaceholderText("Doctors can type in their impressions here");
     mparent = static_cast<dashborad*>(parent);
     ui->stackedWidget->setCurrentWidget(ui->choosepage);
+    ui->FindingsText->setContextMenuPolicy(Qt::CustomContextMenu);
+
+    QAction *action1 = new QAction("check the word attention image",menu);
+
+    menu->addAction(action1);
+    connect(action1,SIGNAL(triggered()),this,SLOT(when_word_selected()));
+
 }
 
 MainWindow::~MainWindow()
@@ -90,7 +97,7 @@ void MainWindow::on_pushButton_clicked()
             const char * remoteNewFileName = ch;
             curl_formadd(&post, &last, CURLFORM_COPYNAME, remoteNewFileKey,  CURLFORM_FILECONTENT, remoteNewFileName, CURLFORM_END);
             curl_easy_setopt(curl, CURLOPT_HTTPPOST, post);
-            curl_easy_setopt(curl,CURLOPT_URL,"http://1.117.203.198:8080/predictions/radio2report");
+            curl_easy_setopt(curl,CURLOPT_URL,"http://1.117.203.198:8080/predictions/radio2reportv2");
             curl_easy_setopt(curl,CURLOPT_INFILESIZE_LARGE,(curl_off_t)file_info.st_size);
             curl_easy_setopt(curl,CURLOPT_VERBOSE, 1L);
             /* get response from server */
@@ -117,6 +124,7 @@ void MainWindow::on_pushButton_clicked()
                  //             (total_time / 1000000), (long)(total_time % 1000000));
                  QString hh = QString::fromStdString(header);
                  QString res = QString::fromStdString(result);
+                 word_list = res.split(" ");
                  ui->FindingsText->setText(res);
                  ui->FindingsText->setStyleSheet("background-color:rgb(251,252,253);\
                                                  border-top:1px solid rgb(234,234,234);\
@@ -204,4 +212,70 @@ void MainWindow::reset(){
                                     background-image: url(:/image/nodata.png);\
                                     background-position:center;");
     ui->ImpressionText->clear();
+}
+
+void MainWindow::on_FindingsText_customContextMenuRequested(const QPoint &pos)
+{
+    menu->exec(QCursor::pos());
+}
+
+
+void MainWindow::when_word_selected()
+{
+    QTextCursor cursor(ui->FindingsText->textCursor());
+    QString select_text = cursor.selectedText();
+
+    int word_pos = word_list.indexOf(select_text);
+    if(-1 == word_pos)
+    {
+        QMessageBox::warning(this,tr("Error"),tr("Please select a complete word"));
+    }
+    else
+    {
+        QString sendpos = QString::number(word_pos);
+        QFile file;
+        file.setFileName("tempsendpos.txt");
+        if(file.open(QIODevice::WriteOnly)){
+               file.write(sendpos.toLatin1());
+               file.close();
+        }
+        CURLcode res;
+        curl = curl_easy_init();
+        if(curl){
+            struct curl_httppost* post = NULL;
+            struct curl_httppost* last = NULL;
+            const char * remoteNewFileKey = "data";
+            const char * remoteNewFileName = "tempsendpos.txt";
+            curl_formadd(&post, &last, CURLFORM_COPYNAME, remoteNewFileKey,  CURLFORM_FILECONTENT, remoteNewFileName, CURLFORM_END);
+            curl_easy_setopt(curl, CURLOPT_HTTPPOST, post);
+            curl_easy_setopt(curl,CURLOPT_URL,"http://1.117.203.198:8080/predictions/visualmodel");
+            curl_easy_setopt(curl,CURLOPT_VERBOSE, 1L);
+            // get response from server
+            std::string header,result;
+            //header contents
+            curl_easy_setopt(curl, CURLOPT_HEADERFUNCTION, &write_data);
+            curl_easy_setopt(curl, CURLOPT_HEADERDATA, &header);
+            //result contents
+            curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, &write_data);
+            curl_easy_setopt(curl, CURLOPT_WRITEDATA, &result);
+
+            res = curl_easy_perform(curl);
+            if(res != CURLE_OK) {
+                QMessageBox::warning(this,tr("Error"),curl_easy_strerror(res));
+                qDebug() << "curl_easy_perform() failed:" << curl_easy_strerror(res);
+            }
+            else{
+                QString hh = QString::fromStdString(header);
+                QString res = QString::fromStdString(result);
+                QImage img;
+                QByteArray arr_base64 = res.toLatin1();
+                img.loadFromData(QByteArray::fromBase64(arr_base64));
+                ui->ImageViwer->setPixmap(QPixmap::fromImage(img));
+            }
+            curl_easy_cleanup(curl);
+        }
+        else{
+            QMessageBox::warning(this,tr("Error"),tr("curl init failed"));
+        }
+    }
 }
