@@ -1,0 +1,120 @@
+2021-08-16 07:44:31,531 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2021-08-16 07:44:31,734 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2021-08-16 07:44:32,013 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.4.2
+TS Home: /Users/michaelma/anaconda3/envs/deecamp/lib/python3.7/site-packages
+Current directory: /Users/michaelma/Desktop/Workspace/deecamp/implementation/deecamp-rl-med
+Temp directory: /var/folders/0c/54lgz9b14hd55f_d4cynpllr0000gn/T/
+Number of GPUs: 0
+Number of CPUs: 16
+Max heap size: 4096 M
+Python executable: /Users/michaelma/anaconda3/envs/deecamp/bin/python
+Config file: N/A
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: /Users/michaelma/Desktop/Workspace/deecamp/implementation/deecamp-rl-med/model/model_store
+Initial Models: morphine=morphine.mar
+Log dir: /Users/michaelma/Desktop/Workspace/deecamp/implementation/deecamp-rl-med/logs
+Metrics dir: /Users/michaelma/Desktop/Workspace/deecamp/implementation/deecamp-rl-med/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 16
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: /Users/michaelma/Desktop/Workspace/deecamp/implementation/deecamp-rl-med/model/model_store
+Model config: N/A
+2021-08-16 07:44:32,026 [INFO ] main org.pytorch.serve.ModelServer - Loading initial models: morphine.mar
+2021-08-16 07:44:32,071 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 1.0 for model morphine
+2021-08-16 07:44:32,071 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model morphine
+2021-08-16 07:44:32,072 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model morphine loaded.
+2021-08-16 07:44:32,072 [DEBUG] main org.pytorch.serve.wlm.ModelManager - updateModel: morphine, count: 16
+2021-08-16 07:44:32,097 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: KQueueServerSocketChannel.
+2021-08-16 07:44:32,469 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2021-08-16 07:44:32,469 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: KQueueServerSocketChannel.
+2021-08-16 07:44:32,471 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2021-08-16 07:44:32,471 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: KQueueServerSocketChannel.
+2021-08-16 07:44:32,472 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2021-08-16 07:44:32,835 [WARN ] pool-2-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2021-08-16 07:44:37,586 [DEBUG] W-9000-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-morphine_1.0 State change null -> WORKER_STARTED
+2021-08-16 07:44:37,586 [DEBUG] W-9007-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9007-morphine_1.0 State change null -> WORKER_STARTED
+2021-08-16 07:44:37,586 [DEBUG] W-9005-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9005-morphine_1.0 State change null -> WORKER_STARTED
+2021-08-16 07:44:37,586 [DEBUG] W-9014-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9014-morphine_1.0 State change null -> WORKER_STARTED
+2021-08-16 07:44:37,587 [DEBUG] W-9006-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9006-morphine_1.0 State change null -> WORKER_STARTED
+2021-08-16 07:44:37,588 [DEBUG] W-9013-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9013-morphine_1.0 State change null -> WORKER_STARTED
+2021-08-16 07:44:37,588 [DEBUG] W-9002-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9002-morphine_1.0 State change null -> WORKER_STARTED
+2021-08-16 07:44:37,588 [DEBUG] W-9003-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9003-morphine_1.0 State change null -> WORKER_STARTED
+2021-08-16 07:44:37,590 [DEBUG] W-9004-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9004-morphine_1.0 State change null -> WORKER_STARTED
+2021-08-16 07:44:37,590 [DEBUG] W-9001-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9001-morphine_1.0 State change null -> WORKER_STARTED
+2021-08-16 07:44:37,592 [DEBUG] W-9009-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9009-morphine_1.0 State change null -> WORKER_STARTED
+2021-08-16 07:44:37,592 [DEBUG] W-9012-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9012-morphine_1.0 State change null -> WORKER_STARTED
+2021-08-16 07:44:37,593 [DEBUG] W-9015-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9015-morphine_1.0 State change null -> WORKER_STARTED
+2021-08-16 07:44:37,594 [DEBUG] W-9010-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9010-morphine_1.0 State change null -> WORKER_STARTED
+2021-08-16 07:44:37,596 [DEBUG] W-9011-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9011-morphine_1.0 State change null -> WORKER_STARTED
+2021-08-16 07:44:37,598 [INFO ] W-9011-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/0c/54lgz9b14hd55f_d4cynpllr0000gn/T//.ts.sock.9011
+2021-08-16 07:44:37,598 [INFO ] W-9015-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/0c/54lgz9b14hd55f_d4cynpllr0000gn/T//.ts.sock.9015
+2021-08-16 07:44:37,598 [INFO ] W-9014-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/0c/54lgz9b14hd55f_d4cynpllr0000gn/T//.ts.sock.9014
+2021-08-16 07:44:37,598 [INFO ] W-9010-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/0c/54lgz9b14hd55f_d4cynpllr0000gn/T//.ts.sock.9010
+2021-08-16 07:44:37,598 [INFO ] W-9004-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/0c/54lgz9b14hd55f_d4cynpllr0000gn/T//.ts.sock.9004
+2021-08-16 07:44:37,598 [INFO ] W-9002-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/0c/54lgz9b14hd55f_d4cynpllr0000gn/T//.ts.sock.9002
+2021-08-16 07:44:37,598 [INFO ] W-9000-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/0c/54lgz9b14hd55f_d4cynpllr0000gn/T//.ts.sock.9000
+2021-08-16 07:44:37,598 [INFO ] W-9009-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/0c/54lgz9b14hd55f_d4cynpllr0000gn/T//.ts.sock.9009
+2021-08-16 07:44:37,598 [INFO ] W-9012-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/0c/54lgz9b14hd55f_d4cynpllr0000gn/T//.ts.sock.9012
+2021-08-16 07:44:37,598 [INFO ] W-9007-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/0c/54lgz9b14hd55f_d4cynpllr0000gn/T//.ts.sock.9007
+2021-08-16 07:44:37,598 [INFO ] W-9003-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/0c/54lgz9b14hd55f_d4cynpllr0000gn/T//.ts.sock.9003
+2021-08-16 07:44:37,598 [INFO ] W-9001-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/0c/54lgz9b14hd55f_d4cynpllr0000gn/T//.ts.sock.9001
+2021-08-16 07:44:37,598 [INFO ] W-9013-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/0c/54lgz9b14hd55f_d4cynpllr0000gn/T//.ts.sock.9013
+2021-08-16 07:44:37,598 [INFO ] W-9006-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/0c/54lgz9b14hd55f_d4cynpllr0000gn/T//.ts.sock.9006
+2021-08-16 07:44:37,598 [INFO ] W-9005-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/0c/54lgz9b14hd55f_d4cynpllr0000gn/T//.ts.sock.9005
+2021-08-16 07:44:37,607 [DEBUG] W-9008-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9008-morphine_1.0 State change null -> WORKER_STARTED
+2021-08-16 07:44:37,607 [INFO ] W-9008-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Connecting to: /var/folders/0c/54lgz9b14hd55f_d4cynpllr0000gn/T//.ts.sock.9008
+2021-08-16 07:44:38,093 [INFO ] W-9005-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 157
+2021-08-16 07:44:38,093 [INFO ] W-9007-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 81
+2021-08-16 07:44:38,094 [DEBUG] W-9007-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9007-morphine_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2021-08-16 07:44:38,095 [DEBUG] W-9005-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9005-morphine_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2021-08-16 07:44:38,093 [INFO ] W-9015-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 131
+2021-08-16 07:44:38,094 [INFO ] W-9001-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 46
+2021-08-16 07:44:38,093 [INFO ] W-9013-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 148
+2021-08-16 07:44:38,099 [DEBUG] W-9013-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9013-morphine_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2021-08-16 07:44:38,099 [DEBUG] W-9001-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9001-morphine_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2021-08-16 07:44:38,093 [INFO ] W-9002-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 148
+2021-08-16 07:44:38,100 [INFO ] W-9012-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 20
+2021-08-16 07:44:38,100 [DEBUG] W-9002-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9002-morphine_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2021-08-16 07:44:38,098 [DEBUG] W-9015-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9015-morphine_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2021-08-16 07:44:38,100 [DEBUG] W-9012-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9012-morphine_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2021-08-16 07:44:38,104 [INFO ] W-9010-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 27
+2021-08-16 07:44:38,104 [INFO ] W-9009-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 47
+2021-08-16 07:44:38,105 [DEBUG] W-9010-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9010-morphine_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2021-08-16 07:44:38,105 [DEBUG] W-9009-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9009-morphine_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2021-08-16 07:44:38,105 [INFO ] W-9014-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 28
+2021-08-16 07:44:38,106 [INFO ] W-9000-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 40
+2021-08-16 07:44:38,107 [DEBUG] W-9014-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9014-morphine_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2021-08-16 07:44:38,107 [DEBUG] W-9000-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9000-morphine_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2021-08-16 07:44:38,108 [INFO ] W-9011-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 20
+2021-08-16 07:44:38,109 [DEBUG] W-9011-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9011-morphine_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2021-08-16 07:44:38,109 [INFO ] W-9004-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 25
+2021-08-16 07:44:38,109 [INFO ] W-9003-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 16
+2021-08-16 07:44:38,110 [DEBUG] W-9004-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9004-morphine_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2021-08-16 07:44:38,110 [DEBUG] W-9003-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9003-morphine_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2021-08-16 07:44:38,115 [INFO ] W-9006-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 22
+2021-08-16 07:44:38,116 [DEBUG] W-9006-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9006-morphine_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2021-08-16 07:44:38,120 [INFO ] W-9008-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 22
+2021-08-16 07:44:38,121 [DEBUG] W-9008-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - W-9008-morphine_1.0 State change WORKER_STARTED -> WORKER_MODEL_LOADED
+2021-08-16 07:45:01,928 [INFO ] W-9013-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 995
+2021-08-16 07:45:01,931 [DEBUG] W-9013-morphine_1.0 org.pytorch.serve.job.Job - Waiting time ns: 153949, Backend time ns: 998041151
+2021-08-16 07:50:46,817 [INFO ] W-9007-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 44
+2021-08-16 07:50:46,818 [DEBUG] W-9007-morphine_1.0 org.pytorch.serve.job.Job - Waiting time ns: 108210, Backend time ns: 46118742
+2021-08-16 07:51:06,983 [INFO ] W-9001-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 39
+2021-08-16 07:51:06,983 [DEBUG] W-9001-morphine_1.0 org.pytorch.serve.job.Job - Waiting time ns: 99403, Backend time ns: 39505360
+2021-08-16 07:51:34,353 [INFO ] W-9002-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 36
+2021-08-16 07:51:34,353 [DEBUG] W-9002-morphine_1.0 org.pytorch.serve.job.Job - Waiting time ns: 164880, Backend time ns: 37053001
+2021-08-16 07:52:19,628 [INFO ] W-9000-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 59
+2021-08-16 07:52:19,629 [DEBUG] W-9000-morphine_1.0 org.pytorch.serve.job.Job - Waiting time ns: 105016, Backend time ns: 60358986
+2021-08-16 07:55:18,238 [INFO ] W-9015-morphine_1.0 org.pytorch.serve.wlm.WorkerThread - Backend response time: 35
+2021-08-16 07:55:18,239 [DEBUG] W-9015-morphine_1.0 org.pytorch.serve.job.Job - Waiting time ns: 83259, Backend time ns: 36574805
